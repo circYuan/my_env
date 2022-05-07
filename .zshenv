@@ -1,13 +1,10 @@
-
 bindkey -v
 
-export PATH=/home/qyyuan/.local/bin:$PATH
-export LIBPATH=$LIBPATH:/home/qyyuan/.local/lib
-export LLVM_BIN=~/llvm/llvm-10/bin
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+
+#export PATH=/home/qyyuan/.local/bin:$PATH
+
 export TERM=xterm-256color
 
 alias e=nvim
-
-
-# }}} End configuration added by Zim install
-
