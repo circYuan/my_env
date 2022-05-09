@@ -46,6 +46,11 @@ git config --global core.editor "nvim"
 git config --global user.name "circYuan"
 git config --global user.email "quanyueyuan@gmail.com"
 
+#oh my tmux
+git clone https://github.com/gpakosz/.tmux.git ~/.tmux
+ln -s -f ~/.tmux/.tmux.conf ~/
+cp $PWD/.tmux.conf.local ~
+
 rm *.tar.gz
 rm -r nvim-linux64
 rm direnv
