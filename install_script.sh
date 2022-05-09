@@ -11,7 +11,6 @@ mkdir ~/.config
 
 #install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-cp $PWD/.zshrc ~
 cp $PWD/.zshenv ~
 cp $PWD/agnoster-circle.zsh-theme ~/.oh-my-zsh/themes
 
