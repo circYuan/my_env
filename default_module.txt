@@ -1,0 +1,4 @@
+git
+direnv
+vi-mode
+zsh-autosuggestions

@@ -29,8 +29,23 @@ mkdir ~/.config/nvim
 cp $PWD/nvim/init.vim ~/.config/nvim
 cp -r $PWD/nvim/syntax ~/.config/nvim
 
+#install nvim plugin
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
 #install direnv
 wget https://github.com/direnv/direnv/releases/download/v2.31.0/direnv.linux-amd64
 mv direnv.linux-amd64 direnv
 chmod +x direnv
 cp direnv ~/.local/bin
+
+#install node js npm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+#handle some config
+git config --global core.editor "nvim"
+git config --global user.name "circYuan"
+git config --global user.email "quanyueyuan@gmail.com"
+
+rm *.tar.gz
+rm -r nvim-linux64
+rm direnv
