@@ -2,3 +2,8 @@ git
 direnv
 vi-mode
 zsh-autosuggestions
+
+
+Things should install by hand:
+chang PATH
+install node(I have installed nvm)
