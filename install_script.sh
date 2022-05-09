@@ -2,6 +2,9 @@
 
 #build .local dir
 mkdir ~/.local
+mkdir ~/.local/bin
+mkdir ~/.local/lib
+mkdir ~/.local/share
 
 #build .config dir
 mkdir ~/.config

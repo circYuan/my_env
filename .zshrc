@@ -74,7 +74,6 @@ ZSH_THEME="agnoster-circle"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git fzf vi-mode zsh-autosuggestions direnv pyenv)
 
-eval "$(pyenv init -)"
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
