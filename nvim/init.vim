@@ -32,6 +32,7 @@ Plug 'jamestthompson3/nvim-remote-containers'
 Plug 'tpope/vim-fugitive'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'rhysd/git-messenger.vim'
+Plug 'nvim-lua/plenary.nvim'
 " " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
