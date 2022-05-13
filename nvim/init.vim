@@ -12,6 +12,10 @@ augroup filetype
   au! BufRead,BufNewFile *.mlir   set filetype=mlir
 augroup END
 
+augroup filetype
+  au! BufRead,BufNewFile *.tex set filetype=tex
+augroup END
+
 " Plugins will be downloaded under the specified directory.
  call plug#begin()
 
@@ -20,19 +24,21 @@ Plug 'crusoexia/vim-monokai'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 "Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
-Plug 'preservim/tagbar'
+"Plug 'preservim/tagbar'
 Plug 'jiangmiao/auto-pairs'
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
 Plug 'sindrets/diffview.nvim'
-Plug 'junegunn/vim-easy-align'
-Plug 'APZelos/blamer.nvim'
-Plug 'jamestthompson3/nvim-remote-containers'
+"Plug 'junegunn/vim-easy-align'
+"Plug 'APZelos/blamer.nvim'
+"Plug 'jamestthompson3/nvim-remote-containers'
 Plug 'tpope/vim-fugitive'
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+"Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'rhysd/git-messenger.vim'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'rhysd/vim-grammarous'
+Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown' }
 " " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -41,6 +47,8 @@ filetype plugin on
 
 autocmd FileType c,cc,cpp setlocal sw=4 sts=2 ts=4
 autocmd FileType javascript setlocal sw=4 sts=2 ts=4
+
+autocmd FileType tex setlocal textwidth=60
 
 
 nnoremap <C-t> :NERDTreeToggle<CR>
@@ -91,3 +99,7 @@ inoremap <silent><expr> <Tab>
      \ pumvisible() ? "\<C-n>" :    
      \ <SID>check_back_space() ? "\<Tab>" :    
      \ coc#refresh()
+
+" for markdown
+let g:mkdp_auto_start = 1
+let g:mkdp_open_to_the_world = 1
