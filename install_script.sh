@@ -43,8 +43,8 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 #handle some config
 git config --global core.editor "nvim"
-git config --global user.name "circYuan"
-git config --global user.email "quanyueyuan@gmail.com"
+#git config --global user.name "circYuan"
+#git config --global user.email "quanyueyuan@gmail.com"
 
 #oh my tmux
 git clone https://github.com/gpakosz/.tmux.git ~/.tmux
