@@ -18,7 +18,7 @@ cp $PWD/agnoster-circle.zsh-theme ~/.oh-my-zsh/themes
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 #install neo-vim
-wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.tar.gz
+wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz
 tar zxvf nvim-linux64.tar.gz
 cp nvim-linux64/bin/* ~/.local/bin
 cp nvim-linux64/lib/* ~/.local/lib
