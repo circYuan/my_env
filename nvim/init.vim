@@ -1,5 +1,6 @@
 set nu
 set shiftwidth=4
+set mouse=
 
 syntax on
 hi CursorLineNr cterm=bold ctermfg=Green ctermbg=NONE
@@ -30,7 +31,7 @@ Plug 'crusoexia/vim-monokai'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
-"Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'preservim/tagbar'
 Plug 'jiangmiao/auto-pairs'
 Plug 'Yggdroot/indentLine'
@@ -79,6 +80,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 "my habit
 nnoremap <leader>ff : LeaderfFunction <CR>
+nnoremap <leader>frg : Leaderf rg --live <CR>
 nnoremap ge : GitGutterEnable <CR>
 nnoremap gd : GitGutterDisable <CR>
 nmap <silent> cgd <Plug>(coc-definition)
